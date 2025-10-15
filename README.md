@@ -1,6 +1,6 @@
 # Manu
 
-Manu is a fast, small and less-featured factory implementation for Ruby.
+Manu is a Ruby gem that makes testing faster with factories and state loading.
 
 ## Installation
 
@@ -18,7 +18,9 @@ gem install manu
 
 ## Usage
 
-TODO: Write usage instructions here
+`Manu::Factory` is a `FactoryBot` replacement. It's default strategy is `find_or_create` so it reuses existing records for better performance.
+
+`Manu::Script` is a script to load multiple factories, used to set up an environment for testing instead of creating data each time.
 
 ## Development
 
